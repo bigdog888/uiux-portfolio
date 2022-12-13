@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iterative Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="iterdesign.css">
+  </head>
+  <body>
+    <div class="go-home"><a href="index.html"><div class="home-text"><h4>← Back to Home</h4></a></div></div>
+    <h1>Iterative Design</h1>
+      <div class="text-section">
+        <h2 class="mt-5 mb-5">About Emerge Career</h2>
+        <p>
+          Emerge career seeks to bridge the gap between employment and individuals post-incarceration. Emerge does so by working with governments to provide online job training in industries that are labor-starved. Additionally, by providing this type of training, Emerge helps to reduce the rate at which previously incarcerated individuals reoffend and thus reduces the rate of overall crime.
+        </p>
+        <p>
+          Users impacted by Emerge Career are those who are re-entering society after being incarcerated. Every year, there are about 600,000 individuals being released from state and federal prisons, and another 9 million from local prisons.
+        </p>
+      </div>
+      <div class="text-section" id="sketching">
+        <h2>Sketching and Wireframing</h2>
+        <h3 class="mt-5 mb-5">Exploring Design Alternatives</h3>
+        <div
+          id="myCarousel"
+          class="carousel slide box-shadow--8dp rounded p-4"
+          data-interval="false"
+        >
+          <div class="carousel-inner">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-item p-4 active">
+              <h5>Design Concept #1</h5>
+              <div class="d-flex justify-content-center">
+                <img class="sketch" src="img/iterative design-2.jpg" />
+                <img class="sketch" src="img/iterative design-3.jpg" />
+                <img class="sketch" src="img/iterative design-4.jpg" />
+              </div>
+              <ul>
+                Unique design choices:
+                <li>Landing page assumes user is returning user</li>
+                <li>Navbar is horizontally displayed at the top</li>
+                <li>Content is sectioned off by borders</li>
+                <li>Two column layout</li>
+                <li>Buttons have borders</li>
+              </ul>
+            </div>
+            <div class="carousel-item p-4">
+              <h5>Design Concept #2</h5>
+              <div class="d-flex justify-content-center">
+                <img class="sketch" src="img/Untitled (Draft)-2.jpg" />
+                <img class="sketch" src="img/Untitled (Draft)-3.jpg" />
+                <img class="sketch" src="img/Untitled (Draft)-4.jpg" />
+              </div>
+              <ul>
+                Unique design choices:
+                <li>Landing page has minimal information</li>
+                <li>Landing page assumes user is new user</li>
+                <li>Two different navbars with opposite alignments</li>
+                <li>Vertical navbar is right aligned</li>
+                <li>
+                  Vertical navbar shows page specific content: current lesson vs
+                  quiz question
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item p-4">
+              <h5>Design Concept #3</h5>
+              <div class="d-flex justify-content-center">
+                <img class="sketch" src="img/iterative design-5.jpg" />
+                <img class="sketch" src="img/iterative design-6.jpg" />
+                <img class="sketch" src="img/iterative design-7.jpg" />
+              </div>
+              <ul>
+                Unique design choices:
+                <li>Landing page has less visuals/images than other designs</li>
+                <li>
+                  Landing page assumes user new but presents much more
+                  information
+                </li>
+                <li>Small image accompanies all course and job descriptions</li>
+                <li>Users have the option to filter content</li>
+                <li>
+                  Users have the option to save courses and jobs of interest
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item p-4">
+              <h5>Design Concept #4</h5>
+              <div class="d-flex justify-content-center">
+                <img class="sketch" src="img/sketch4.jpg" />
+                <img class="sketch" src="img/sketch4-2.jpg" />
+                <img class="sketch" src="img/sketch4-3.jpg" />
+              </div>
+              <ul>
+                Unique design choices:
+                <li>
+                  Landing pages presents both extensive information and visuals
+                  for new users
+                </li>
+                <li>
+                  Single navbar with left aligned, centered, and right aligned
+                  content
+                </li>
+                <li>Navbar is collapsed</li>
+                <li>Buttons are rounded</li>
+                <li>Content is sectioned off using horizontal breaks</li>
+              </ul>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#myCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#myCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <h3 class="mt-5 mb-5">Combining Ideas Into a Wireframe</h3>
+        <div
+          id="wireframeCarousel"
+          class="carousel box-shadow--8dp rounded ml-5 mr-5"
+          data-interval="false"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#wireframeCarousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#wireframeCarousel" data-slide-to="1"></li>
+            <li data-target="#wireframeCarousel" data-slide-to="2"></li>
+            <li data-target="#wireframeCarousel" data-slide-to="3"></li>
+            <li data-target="#wireframeCarousel" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner p-5 container">
+            <div class="carousel-item p-5 active">
+              <h5 class="mb-3">Home page</h5>
+              <img
+                class="d-block wireframe"
+                src="img/New Wireframe 1 (3).png"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item p-5">
+              <h5 class="mb-3">Training page</h5>
+              <img
+                class="d-block wireframe"
+                src="img/New Wireframe 1 (1).png"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item p-5">
+              <h5 class="mb-3">Courses Page</h5>
+              <img
+                class="d-block wireframe"
+                src="img/New Wireframe 1 (4).png"
+                alt="Third slide"
+              />
+            </div>
+            <div class="carousel-item p-5">
+              <h5 class="mb-3">Lessons Page</h5>
+              <img
+                class="d-block wireframe"
+                src="img/New Wireframe 1 (2).png"
+                alt="Fourth slide"
+              />
+            </div>
+            <div class="carousel-item p-5">
+              <h5 class="mb-3">Find Jobs Page</h5>
+              <img
+                class="d-block wireframe"
+                src="img/New Wireframe 1 (5).png"
+                alt="Fifth slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#wireframeCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#wireframeCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="text-section" id="mockup">
+        <h2>High Fidelity Mockup</h2>
+        <div class="container mt-5 mb-5">
+          <p>Based on our wireframes, we created a high-fidelity protoype of the application to be critiqued by our peers. </p>
+          <iframe class="box-shadow--8dp" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Frvg9iOJ0EVgpMMCD2p5mEI%2Fcsci1300-first-iteration%3Fscaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26node-id%3D1%253A2" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="text-section">
+        <h2>Critique Feedback</h2>
+        <div class="d-flex">
+          <div class="p-5">
+            <p><strong>The problems peers found with our prototype include:</strong></p>
+            <ol> 
+              <li>The text, specifically titles, of the Training page should be clickable</li>
+              <li>Capitalize "u" in "Contact us" </li>
+              <li>Highlight sidebar to indicate what section you are currently on</li>
+              <li>The progress bar should include text for how much you've completed on the training page</li>
+              <li>The Emerge Career title and About sections of the nav bar redundantly navigate to the same page</li>
+              <li>The green of the navbar is too dark - creates low contrast</li>
+              <li>Filler words ("lorem ipsum..") should not be included in the final prototype</li>
+              <li>Font hierarchy of Training page. Specifically, course titles should have lower hierarchy</li>
+            </ol>
+            <p><strong>The changes we made to specifically address each problem include:</strong></p>
+            <ol>
+              <li>Made the titles of Training page clickable</li>
+              <li>Capitalized "Contact Us"</li>
+              <li>The section which you are on is bolded on the navbar</li>
+              <li>The Training page progress bar lists how many sections have been completed out of total sections</li>
+              <li>The Emerge Career title no longer navigates to the same page as About on the navbar (it is just a title)</li>
+              <li>Made the navbar color lighter to increase contrast</li>
+              <li>Replaced all filler words with content you would expect to see in the real application</li>
+              <li>Courses titles now have lower hierarchy that "Your Courses"</li>
+            </ol>
+          </div>
+         <div class="p-5">
+          <p><strong>Based on the feedback from our peers we created a second iteration of our high-fidelity prototype:</strong></p>
+          <iframe class="box-shadow--8dp" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCRjf3oyBftSj5ReXbiy5Xc%2Fcsci1300-iterative-design-hifi-mockup-(1)%3Fscaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26node-id%3D1%253A2" allowfullscreen></iframe>
+         </div>
+        </div>
+      </div>
+      <div class="text-section" id="usertesting">
+        <h2>User Testing</h2>
+        <p>
+          To further test our design, we were provided three free user tests on
+          usertesting.com by Brown.
+        </p>
+        <p>
+          In these tests, the users attempted to navigate our website to sign in
+          and view the latest lesson in a specified course.
+        </p>
+        <div class="d-flex justify-content-evenly">
+          <div class="w-50 m-3">
+            <h3>Instructions</h3>
+            <p class="text-start">
+              "This is a prototype of a website that provides online education
+              and job search opportunities for formerly incarcerated
+              individuals. Imagine that you are a student who is logging onto
+              the website. You are currently enrolled in a course that will
+              certify you to operate heavy machinery. Navigate to the course and
+              start the next section to continue your training. We encourage you
+              to think aloud as you navigate the prototype. Note that this is a
+              prototype and not a finished website, so some functionality may
+              not work."
+            </p>
+          </div>
+          <div class="w-50 m-3">
+            <h3>Tasks</h3>
+            <ol class="text-start">
+              <li>
+                Without leaving the homepage, what are your initial impressions
+                of the website? Explain your answer.
+              </li>
+              <li>
+                Sign in to the website and navigate to the "Training" page.
+                [Success: Yes, No] [5-point rating scale: Very difficult to Very
+                easy]
+              </li>
+              <li>
+                Navigate to the "Heavy Machinery Certification" course and begin
+                the next section, "Operating Procedures". [Success: Yes, No]
+                [5-point rating scale: Very difficult to Very easy]
+              </li>
+              <li>
+                How intuitive was it to navigate our prototype and reach the
+                desired section? [5-point Rating scale: Very difficult to Very
+                easy]
+              </li>
+            </ol>
+          </div>
+        </div>
+        <h3>Analysis of Results</h3>
+        <ul class="text-start">
+          <li>
+            People generally found our prototype to be understandable and clear,
+            and all three were able to complete our tasks.
+          </li>
+          <li>
+            A few users had issues with figma, such as the demo being too large
+            for the screen or the figma bar hiding certain features.
+          </li>
+          <li>
+            Some users had a bit of trouble with the sign in flow, particularly
+            about whether they needed to create an account or just click the
+            sign in button, but that seemed to be mostly a function of Figma and
+            our task descriptions being unclear.
+          </li>
+          <li>
+            Some users mentioned that finding the correct section within the
+            course was a bit difficult
+          </li>
+        </ul>
+        <h3 class="mt-5 mb-5">User Videos</h3>
+
+        <div
+          id="userVideos"
+          class="carousel box-shadow--8dp rounded ml-5 mr-5"
+          data-interval="false"
+        >
+          <ol class="carousel-indicators">
+            <li data-target="#userVideos" data-slide-to="0" class="active"></li>
+            <li data-target="#userVideos" data-slide-to="1"></li>
+            <li data-target="#userVideos" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner p-5 container">
+            <div class="carousel-item p-5 active">
+              <h5 class="mb-2">User Video 1</h5>
+              <video width="100%" height="600px" controls>
+                <source
+                  src="img/UserTesting-4339927A.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="carousel-item p-5">
+              <h5 class="mb-2">User Video 2</h5>
+              <video width="100%" height="600px" controls>
+                <source
+                  src="img/UserTesting-4339927B.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="carousel-item p-5">
+              <h5 class="mb-2">User Video 3</h5>
+              <video width="100%" height="600px" controls>
+                <source
+                  src="img/UserTesting-4339927C.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#userVideos"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#userVideos"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="text-section">
+            <h2>Takeaways</h2>
+            <h3>Designing iteratively helped us improve upon each design in different stages:</h3>
+            <ul>
+              <li>Sketching is an easy medium to get a feel for the website.</li>
+              <li>Wireframing helps to clean up a sketch and view the layout more easily.</li>
+              <li>The first mockup is essentially a high fidelity version of the wireframe, with content and colors added. User feedback on this version is especially helpful, as this design is close to the final version.</li>
+              <li>The second mockup is the culmination of the previous steps, producing a website that has been adjusted according to feedback by multiple users.</li>
+              <li>Submitting our final version to a user testing website provides us feedback that we can use to analyze our design and see potential interface improvements.</li>
+            </ul>
+            <div class="container mt-5 mb-5">
+              <h3>Our final hifi mockup:</h3>
+              <iframe class="box-shadow--8dp" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FyEdQHL4m7ZfSHM4Qat6E25%2Fcsci1300-iterative-design-hifi-mockup%3Fnode-id%3D1%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2" allowfullscreen></iframe>
+            </div>
+
+    <h1>Final Design</h1>
+    <a href="https://iterativeemergecareer.netlify.app/#section1">Link to Redesign</a>
+  </body>
+</html>

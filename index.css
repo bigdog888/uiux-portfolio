@@ -1,0 +1,127 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Helvetica;
+  margin: 5em 5em 5em 5em;
+}
+
+a {
+  color: rgb(91, 224, 224)
+}
+
+a:visited {
+  color: rgb(157, 183, 244);
+}
+
+ul {
+  list-style: square;
+  line-height: 180%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 95%;
+  padding: 6em;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 90%;
+  padding: 1em;
+  position: left;
+}
+
+.container-3 {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 90%;
+  padding: 1em;
+  position: left;
+}
+
+.container-item {
+  display: flex;
+  width: 100%;
+}
+
+.music-text {
+  padding-left: 2vw;
+  max-width: 50%;
+}
+
+.display-item {
+  max-width: 45%;
+  margin: 1em;
+}
+
+.display-item-2 {
+  padding: 1vw;
+}
+
+.display-img:hover {
+  transform: scale(1.02);
+  transition: 1s;
+}
+
+.display-img {
+  transition: 1s;
+  transform: scale(1);
+  height: auto;
+  max-height: 60%;
+  padding: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-img:hover {
+  transform: scale(1.02);
+  transition: 1s;
+}
+
+.menu-img {
+  object-fit: cover;
+  transition: 1s;
+  transform: scale(1);
+  width: 400px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.emerge {
+  border: 4px solid white;
+  padding: 8px;
+}
+
+.about-me {
+  margin-top: 2em;
+  width: 40%;
+}
+
+.go-home {
+  position: sticky;
+  width: 100%;
+  top: 0em;
+  height: 5em;
+  background-color: black;
+}
+
+.home-text {
+  padding: 1.5em 0%;
+}
+
+.item-text {
+  text-align:right;
+  padding: 8px;
+}
